@@ -1,0 +1,37 @@
+#eight-ball {
+    height: 400px;
+    width: 400px;
+    border-radius: 100%;
+    background-color: black;
+    margin: 0 auto;
+}
+
+#answer {
+    margin: 0 auto;
+    padding-top: 160px;
+    background-color: black;
+    width: 80px;
+    color: white;
+    height: 80px;
+    text-align: center;
+    z-index: 1;
+    border-radius: 100%;
+}
+
+#shake {
+    margin: 20px auto;
+    width: 100px;
+    padding: 10px 0;
+    border: 2px solid black;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.animate-delay {
+    -webkit-animation-duration: 2s;
+    -moz-animation-duration: 2s;
+    animation-duration: 2s;
+    -webkit-animation-delay: 1s;
+    -moz-animation-delay: 1s;
+    animation-delay: 1s;
+}
