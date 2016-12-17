@@ -13,7 +13,7 @@ function main() {
         document.getElementById('answer').innerHTML = '';
         setTimeout(function() {
             document.getElementById('answer').innerHTML = getAnswer();
-        }, 2000);
+        }, 1200);
         setTimeout(function() {
             $(eightBall).removeClass('shake');
         }, 1000);
