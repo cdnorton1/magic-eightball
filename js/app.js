@@ -6,16 +6,17 @@ function main() {
         return magicAnswers[randomNum];
     }
 
-    function fadeIn() {
-        var answer = document.getElementById('answer');
-        $(answer).addClass('fadeIn animate-delay');
-        document.getElementById('answer').innerHTML = getAnswer();
-    };
-
     $('#shake').on("click", function() {
         var eightBall = document.getElementById('eight-ball');
+        var answerWindow = document.getElementById('answer');
         $(eightBall).addClass('shake');
-        fadeIn();
+        document.getElementById('answer').innerHTML = '';
+        setTimeout(function() {
+            document.getElementById('answer').innerHTML = getAnswer();
+        }, 2000);
+        setTimeout(function() {
+            $(eightBall).removeClass('shake');
+        }, 1000);
     });
 
     document.getElementById("shake").style.cursor = "pointer";
